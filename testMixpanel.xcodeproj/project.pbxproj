@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0088F28225A457638AF6117E /* Pods_testMixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3900EBF3FA197EB1D60961 /* Pods_testMixpanel.framework */; };
+		152C96C72087305A001A48F2 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 152C96C62087305A001A48F2 /* sample.json */; };
 		15E8C6DF2087287800D52CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8C6DE2087287800D52CFF /* AppDelegate.swift */; };
 		15E8C6E12087287800D52CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8C6E02087287800D52CFF /* ViewController.swift */; };
 		15E8C6E42087287800D52CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8C6E22087287800D52CFF /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152C96C220872CB3001A48F2 /* testMixpanel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testMixpanel-Bridging-Header.h"; sourceTree = "<group>"; };
+		152C96C62087305A001A48F2 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		15E8C6DB2087287800D52CFF /* testMixpanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testMixpanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8C6DE2087287800D52CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E8C6E02087287800D52CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		15E8C6E52087287A00D52CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E8C6E82087287A00D52CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E8C6EA2087287A00D52CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3900EBF3FA197EB1D60961 /* Pods_testMixpanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testMixpanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05F8B5C643BE8DCADD19F33 /* Pods-testMixpanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMixpanel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testMixpanel/Pods-testMixpanel.debug.xcconfig"; sourceTree = "<group>"; };
+		F2DD9E98339F671402194402 /* Pods-testMixpanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMixpanel.release.xcconfig"; path = "Pods/Target Support Files/Pods-testMixpanel/Pods-testMixpanel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0088F28225A457638AF6117E /* Pods_testMixpanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				15E8C6DD2087287800D52CFF /* testMixpanel */,
 				15E8C6DC2087287800D52CFF /* Products */,
+				77525CBA35C08C5A4F0BD771 /* Pods */,
+				1C1BE87E587D0E9FBCFAF43B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +66,31 @@
 			children = (
 				15E8C6DE2087287800D52CFF /* AppDelegate.swift */,
 				15E8C6E02087287800D52CFF /* ViewController.swift */,
+				152C96C62087305A001A48F2 /* sample.json */,
 				15E8C6E22087287800D52CFF /* Main.storyboard */,
 				15E8C6E52087287A00D52CFF /* Assets.xcassets */,
 				15E8C6E72087287A00D52CFF /* LaunchScreen.storyboard */,
 				15E8C6EA2087287A00D52CFF /* Info.plist */,
+				152C96C220872CB3001A48F2 /* testMixpanel-Bridging-Header.h */,
 			);
 			path = testMixpanel;
+			sourceTree = "<group>";
+		};
+		1C1BE87E587D0E9FBCFAF43B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC3900EBF3FA197EB1D60961 /* Pods_testMixpanel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77525CBA35C08C5A4F0BD771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C05F8B5C643BE8DCADD19F33 /* Pods-testMixpanel.debug.xcconfig */,
+				F2DD9E98339F671402194402 /* Pods-testMixpanel.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15E8C6ED2087287A00D52CFF /* Build configuration list for PBXNativeTarget "testMixpanel" */;
 			buildPhases = (
+				14FB9893403645FEBDFD231E /* [CP] Check Pods Manifest.lock */,
 				15E8C6D72087287800D52CFF /* Sources */,
 				15E8C6D82087287800D52CFF /* Frameworks */,
 				15E8C6D92087287800D52CFF /* Resources */,
+				600500201CC023769195EA10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,7 @@
 				TargetAttributes = {
 					15E8C6DA2087287800D52CFF = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -123,12 +155,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E8C6E92087287A00D52CFF /* LaunchScreen.storyboard in Resources */,
+				152C96C72087305A001A48F2 /* sample.json in Resources */,
 				15E8C6E62087287A00D52CFF /* Assets.xcassets in Resources */,
 				15E8C6E42087287800D52CFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14FB9893403645FEBDFD231E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testMixpanel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		600500201CC023769195EA10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testMixpanel/Pods-testMixpanel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mixpanel/Mixpanel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testMixpanel/Pods-testMixpanel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		15E8C6D72087287800D52CFF /* Sources */ = {
@@ -213,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,8 +350,11 @@
 		};
 		15E8C6EE2087287A00D52CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C05F8B5C643BE8DCADD19F33 /* Pods-testMixpanel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testMixpanel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -288,6 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = testMixpanel.testMixpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testMixpanel/testMixpanel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,8 +372,11 @@
 		};
 		15E8C6EF2087287A00D52CFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DD9E98339F671402194402 /* Pods-testMixpanel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testMixpanel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +385,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = testMixpanel.testMixpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testMixpanel/testMixpanel-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
