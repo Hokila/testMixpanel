@@ -29,17 +29,23 @@ class ViewController: UIViewController {
         self.view.addSubview(idButton)
         idButton.addTarget(self, action: #selector(userStatusButtonPress), for: .touchDown)
         
+        ////call this at register succcess
+        let userID = "RealUserID"
         if let distinctId = Mixpanel.sharedInstance()?.distinctId {
-            Mixpanel.sharedInstance()?.createAlias("UserID", forDistinctID: distinctId, usePeople: true)
+            Mixpanel.sharedInstance()?.createAlias(userID, forDistinctID: distinctId, usePeople: false)
         }
         
         //call this at login
-        Mixpanel.sharedInstance()?.identify("RealUserID", usePeople: true)
+        Mixpanel.sharedInstance()?.identify(userID, usePeople: false)
+        guard let people =  Mixpanel.sharedInstance()?.people else {
+            return
+        }
+        people.set("UserID", to: userID)
     }
 
     @objc func buttonPress() {
         var property = [String:Any]()
-        property["array"] = ["123","456"]
+        property["array"] = [123,"456",123.456,true]
         property["string"] = 123456
         property["int"] = 123
         property["float"] = Float(123.456)
